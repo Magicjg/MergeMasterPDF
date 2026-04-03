@@ -21,7 +21,20 @@ Download the latest version from the Releases section:
 https://github.com/Magicjg/MergeMasterPDF/releases
 
 ## Screenshots
-(Add screenshots here later)
+
+### Main window
+![Main](screenshots/theme_lith.png)
+![Main](screenshots/theme_dark.png)
+
+### Preview and thumbnails
+![Preview](screenshots/preview.png)
+
+### Visual editor
+![Editor](screenshots/editor.png)
+
+## Download
+Download the latest version from the Releases section:
+https://github.com/Magicjg/MergeMasterPDF/releases
 
 ## License
 Free for personal use.
