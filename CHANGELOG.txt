@@ -1,0 +1,15 @@
+MergeMasterPDF - Changelog
+
+Version 1.0
+- Unir PDFs
+- Combinar por nombre
+- Separar PDF
+- Eliminar páginas
+- Rotar páginas
+- Reordenar páginas
+- Vista previa
+- Miniaturas
+- Editor visual
+- Guardar y cargar proyectos
+- Tema oscuro y claro
+- Drag & drop

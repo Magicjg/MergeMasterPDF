@@ -1,0 +1,11 @@
+MergeMasterPDF License
+
+Copyright (c) 2026 Alan Juarez
+
+Se permite el uso personal gratuito de este software.
+No se permite la venta, redistribución o uso comercial sin autorización del autor.
+
+Este software se distribuye sin garantías.
+El autor no se hace responsable por pérdida de datos o daños derivados del uso del software.
+
+Para uso comercial o licencias especiales contactar al autor.
