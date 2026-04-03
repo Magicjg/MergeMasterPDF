@@ -1,33 +1,31 @@
 # MergeMasterPDF
 
-MergeMasterPDF es una aplicación de escritorio para organizar, combinar,
-separar, reordenar y previsualizar PDFs e imágenes desde una sola aplicación.
+MergeMasterPDF is a desktop application to organize, merge, split, reorder and preview PDF files and images from a single interface.
 
-## Funciones
-- Agregar PDFs e imágenes
-- Agregar carpetas completas
-- Unir PDFs
-- Combinar PDFs por nombre
-- Separar PDFs
-- Eliminar páginas
-- Rotar páginas
-- Reordenar páginas
-- Vista previa
-- Miniaturas
-- Editor visual
-- Guardar y cargar proyectos
-- Tema oscuro y claro
+## Features
+- Merge PDFs
+- Combine PDFs by name
+- Split PDFs
+- Delete pages
+- Rotate pages
+- Reorder pages
+- Preview and thumbnails
+- Visual page editor
+- Drag & drop support
+- Save and load projects
+- Dark / Light theme
+- Help menu with shortcuts and version info
 
-## Atajos
-Alt + Arrastrar → Reordenar archivos
-Ctrl + Click → Selección múltiple
-Shift + Click → Selección por rango
-Click derecho → Menú contextual
-Ctrl + Scroll → Zoom preview
+## Download
+Download the latest version from the Releases section:
+https://github.com/Magicjg/MergeMasterPDF/releases
 
-## Licencia
-Uso personal gratuito.
-Para uso comercial contactar al autor.
+## Screenshots
+(Add screenshots here later)
 
-## Autor
+## License
+Free for personal use.
+Commercial use requires permission.
+
+## Author
 Alan Juarez
