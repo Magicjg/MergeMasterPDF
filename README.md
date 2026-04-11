@@ -2,6 +2,8 @@
 
 Aplicacion de escritorio para Windows hecha en Python para unir, ordenar, dividir y revisar PDFs desde una sola interfaz.
 
+![Icono de MergeMasterPDF](icono.png)
+
 [Descargar release portable](https://github.com/Magicjg/MergeMasterPDF/releases/tag/v1.0.1)
 
 ## Lo que puedes hacer
