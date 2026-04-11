@@ -1,41 +1,56 @@
 # MergeMasterPDF
 
-Aplicacion de escritorio en Python para unir, ordenar, dividir y previsualizar archivos PDF desde una sola interfaz.
+Aplicacion de escritorio para Windows hecha en Python para unir, ordenar, dividir y revisar PDFs desde una sola interfaz.
 
-## Funciones
+[Descargar release portable](https://github.com/Magicjg/MergeMasterPDF/releases/tag/v1.0.1)
+
+## Lo que puedes hacer
 
 - Unir varios PDF en un solo archivo
-- Combinar archivos por nombre
-- Separar PDF por paginas
-- Eliminar paginas de un PDF
+- Combinar documentos por nombre
+- Separar PDFs por paginas
+- Eliminar paginas concretas
 - Rotar paginas
 - Reordenar paginas con editor visual
-- Vista previa y miniaturas
-- Soporte para arrastrar y soltar
+- Ver miniaturas y vista previa
+- Arrastrar y soltar archivos
 - Guardar y cargar proyectos
-- Tema oscuro y claro
+- Cambiar entre tema claro y oscuro
 
 ## Descarga recomendada
 
-La forma recomendada de usar MergeMasterPDF es el build portable:
+La forma mas comoda de usar MergeMasterPDF es el build portable para Windows:
 
-1. Descarga el archivo `MergeMasterPDF-v1.0.1-windows-x64.zip`
+1. Descarga [MergeMasterPDF-v1.0.1-windows-x64.zip](https://github.com/Magicjg/MergeMasterPDF/releases/download/v1.0.1/MergeMasterPDF-v1.0.1-windows-x64.zip)
 2. Extrae la carpeta
 3. Ejecuta `MergeMasterPDF.exe`
 
 ## Capturas
 
+### Tema claro
+
 ![Tema claro](screenshots/theme_lith.png)
+
+### Tema oscuro
+
 ![Tema oscuro](screenshots/theme_dark.png)
+
+### Vista previa
+
 ![Vista previa](screenshots/preview.png)
+
+### Editor visual
+
 ![Editor visual](screenshots/editor.png)
 
-## Requisitos para desarrollo
+## Desarrollo local
+
+Requisitos:
 
 - Python 3.14 o compatible
-- Dependencias de `requirements.txt`
+- Dependencias de [requirements.txt](requirements.txt)
 
-## Instalacion local
+Instalacion:
 
 ```powershell
 python -m venv .venv
@@ -43,19 +58,21 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Ejecutar desde codigo fuente
+Ejecutar desde codigo fuente:
 
 ```powershell
 .\.venv\Scripts\python.exe .\MergeMasterPDF.py
 ```
 
-## Generar build para Windows
+## Build para Windows
+
+Generar ejecutable portable:
 
 ```powershell
 .\build_windows.ps1
 ```
 
-El script genera por defecto:
+Salida esperada:
 
 - `dist\MergeMasterPDF\MergeMasterPDF.exe`
 - `dist\MergeMasterPDF-v1.0.1-windows-x64.zip`
@@ -69,7 +86,8 @@ $env:MMP_BUILD_INSTALLER="1"
 
 ## Notas
 
-- `config.json` se guarda junto al proyecto al ejecutar desde codigo fuente y en `%APPDATA%\MergeMasterPDF` al usar el build empaquetado.
+- `config.json` se guarda junto al proyecto al ejecutar desde codigo fuente.
+- En el build empaquetado la configuracion se guarda en `%APPDATA%\MergeMasterPDF`.
 - `build/`, `dist/` e instaladores quedan fuera del repo.
 
 ## Licencia
