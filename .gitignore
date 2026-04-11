@@ -1,6 +1,15 @@
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 build/
 dist/
-*.spec
+installer_output/
 config.json
+*.exe
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+Thumbs.db
+.DS_Store

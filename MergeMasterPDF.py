@@ -1,10 +1,11 @@
 APP_NAME = "MergeMasterPDF"
-APP_VERSION = "1.0"
+APP_VERSION = "1.0.1"
 
 from pathlib import Path
 import json
 import os
 import re
+import sys
 import tempfile
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk, simpledialog
@@ -19,7 +20,20 @@ try:
 except Exception:
     FITZ_AVAILABLE = False
 
-CONFIG_FILE = Path("config.json")
+def get_config_file():
+    if getattr(sys, "frozen", False):
+        appdata_root = Path(os.getenv("APPDATA") or str(Path.home()))
+        return appdata_root / APP_NAME / "config.json"
+    return Path(__file__).resolve().parent / "config.json"
+
+
+def get_resource_path(relative_path):
+    base_path = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+    return base_path / relative_path
+
+
+CONFIG_FILE = get_config_file()
+APP_ICON = get_resource_path("icono.ico")
 
 
 class PDFMergerApp:
@@ -34,7 +48,8 @@ class PDFMergerApp:
         self.root.minsize(980, 680)
 
         try:
-            self.root.iconbitmap("icono.ico")
+            if APP_ICON.exists():
+                self.root.iconbitmap(default=str(APP_ICON))
         except Exception:
             pass
 
@@ -103,6 +118,7 @@ class PDFMergerApp:
             self.config_data["open_pdf_after_merge"] = self.open_pdf_var.get()
             self.config_data["open_folder_after_merge"] = self.open_folder_var.get()
             self.config_data["theme"] = self.current_theme
+            CONFIG_FILE.parent.mkdir(parents=True, exist_ok=True)
             with open(CONFIG_FILE, "w", encoding="utf-8") as f:
                 json.dump(self.config_data, f, indent=4, ensure_ascii=False)
         except Exception as e:
