@@ -1,6 +1,6 @@
 #define MyAppName "MergeMasterPDF"
 #ifndef MyAppVersion
-  #define MyAppVersion "1.0.1"
+  #define MyAppVersion "1.0.2"
 #endif
 #define MyAppPublisher "Alan Juarez"
 #define MyAppExeName "MergeMasterPDF.exe"

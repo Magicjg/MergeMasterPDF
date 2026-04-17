@@ -4,7 +4,7 @@ Aplicacion de escritorio para Windows hecha en Python para unir, ordenar, dividi
 
 ![Icono de MergeMasterPDF](icono.png)
 
-[Descargar release portable](https://github.com/Magicjg/MergeMasterPDF/releases/tag/v1.0.1)
+[Descargar release portable](https://github.com/Magicjg/MergeMasterPDF/releases/tag/v1.0.2)
 
 ## Lo que puedes hacer
 
@@ -23,7 +23,7 @@ Aplicacion de escritorio para Windows hecha en Python para unir, ordenar, dividi
 
 La forma mas comoda de usar MergeMasterPDF es el build portable para Windows:
 
-1. Descarga [MergeMasterPDF-v1.0.1-windows-x64.zip](https://github.com/Magicjg/MergeMasterPDF/releases/download/v1.0.1/MergeMasterPDF-v1.0.1-windows-x64.zip)
+1. Descarga [MergeMasterPDF-v1.0.2-windows-x64.zip](https://github.com/Magicjg/MergeMasterPDF/releases/download/v1.0.2/MergeMasterPDF-v1.0.2-windows-x64.zip)
 2. Extrae la carpeta
 3. Ejecuta `MergeMasterPDF.exe`
 
@@ -100,7 +100,7 @@ build_windows.bat
 Salida esperada:
 
 - `dist\MergeMasterPDF\MergeMasterPDF.exe`
-- `dist\MergeMasterPDF-v1.0.1-windows-x64.zip`
+- `dist\MergeMasterPDF-v1.0.2-windows-x64.zip`
 
 Si quieres generar tambien instalador:
 
