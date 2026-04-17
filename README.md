@@ -66,12 +66,35 @@ Ejecutar desde codigo fuente:
 .\.venv\Scripts\python.exe .\MergeMasterPDF.py
 ```
 
+Tambien puedes usar el punto de entrada nuevo:
+
+```powershell
+.\.venv\Scripts\python.exe .\app.py
+```
+
+## Estructura del codigo
+
+- `app.py`: punto de entrada simple.
+- `MergeMasterPDF.py`: ventana principal e interaccion de UI.
+- `ui/theme.py`: paletas claro/oscuro y estilos ttk.
+- `ui/widgets.py`: constructores reutilizables de botones.
+- `ui/preview.py`: render de preview, miniaturas y calculos de zoom.
+- `core/config.py`: carga/guardado de configuracion y rutas.
+- `core/file_manager.py`: filtros, orden, nombres, tamanos y archivos soportados.
+- `core/pdf_tools.py`: operaciones PDF e imagenes sin depender de la interfaz.
+
 ## Build para Windows
 
 Generar ejecutable portable:
 
 ```powershell
 .\build_windows.ps1
+```
+
+Si Windows bloquea scripts de PowerShell por politica de ejecucion, usa:
+
+```cmd
+build_windows.bat
 ```
 
 Salida esperada:
